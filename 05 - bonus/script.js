@@ -16,9 +16,9 @@ console.log(greeting);
 // Invoca la funzione qui e stampa il risultato in console
 
 /**
- * Description
+ * in base all'ora attuale genero un saluto appropriato seguito dal nome nella variabile
  * @param {string} person
- * @returns {any}
+ * @returns {string}
  */
 function hello(person) {
     const time = new Date().getHours(); // per sapere ora corrente

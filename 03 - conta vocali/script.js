@@ -20,8 +20,8 @@ function vowels(letter) {
     let letterFilter = "";
 
     for (let i = 0; i < letter.length; i++) {
-        if (letter[i] === `a` || letter[i] === `e` || letter[i] === `i` || letter[i] === `o` || letter[i] === `u`) {
-            letterFilter += letter[i] + " ";
+        if ('aeiou'.includes(letter[i])) {      // controllare che le vocali ci siano nella parola da analizzare
+            letterFilter += letter[i] + ", ";    // sistemare le vocali divise da virgola + spazio
         }
     }
     return letterFilter

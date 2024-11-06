@@ -17,7 +17,7 @@ console.log(letterFilter);
  */
 function vowels(letter) {
 
-    let letterFilter = "";
+    let letterFilter = "";      // variabile vuota per memorizzare il risultato
 
     for (let i = 0; i < letter.length; i++) {
         if ('aeiou'.includes(letter[i])) {      // controllare che le vocali ci siano nella parola da analizzare

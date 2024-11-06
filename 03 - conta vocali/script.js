@@ -24,7 +24,7 @@ function vowels(letter) {
             letterFilter += letter[i] + ", ";    // sistemare le vocali divise da virgola + spazio
         }
     }
-    return letterFilter
+    return letterFilter;
 }
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)

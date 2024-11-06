@@ -2,9 +2,9 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-
-// Dichiara la funzione qui.
-const capLet = [];
+ // Dichiara la funzione qui.
+const capLet = firstLet(names);
+console.log(capLet);
 
 // Invoca la funzione qui e stampa il risultato in console
 
@@ -14,14 +14,13 @@ const capLet = [];
  * @returns {string}
  */
 function firstLet(arrayNames) {
-    
+      
+    const capLet = [];
+
     for (let i = 0; i < arrayNames.length; i++) {
         capLet.push(arrayNames[i][0]);  // prendere prima lettera del nome e aggiungo lettera all'array
     }
+    return capLet;
 }
-
-firstLet(names)
-console.log(capLet);
-
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
